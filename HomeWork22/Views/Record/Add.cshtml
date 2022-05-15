@@ -1,0 +1,36 @@
+﻿@model HomeWork22.Controllers.RecordController
+@{
+}
+
+<h1 class="text-black-50">Добавьте запись</h1>
+<div class="card m-3">
+    <form action="~/Record/GetDataFromViewFields" method="post">
+        <table>
+            <tr>
+                <td>Фамилия</td>
+                <td><input type="text" name="LastName" /></td>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td><input type="text" name="FirstName" /></td>
+            </tr>
+            <tr>
+                <td>Отчество</td>
+                <td><input type="text" name="MiddleName" /></td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td><input type="text" name="Phone" /></td>
+            </tr>
+            <tr>
+                <td>Адрес</td>
+                <td><input type="text" name="Adress" /></td>
+            </tr>
+            <tr>
+                <td>Информация</td>
+                <td><input type="text" name="Info" /></td>
+            </tr>
+        </table><br />
+        <input type="submit" value="Добавить" />
+    </form>
+</div>

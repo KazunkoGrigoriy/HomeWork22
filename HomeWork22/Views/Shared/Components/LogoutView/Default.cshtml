@@ -1,0 +1,18 @@
+﻿
+@if(User.Identity.IsAuthenticated)
+{
+    <div>
+        <a class="navbar" href="~/">В начало</a>
+        <a class="navbar" href="/Record/Add">Добавить запись</a>
+        <form method="post" asp-controller="Account" asp-action="Logout" id="logout">
+            <a class="navbar" href="/Account/Login" onclick="document.getElementById('logout').submit()">Выйти</a>
+        </form>
+    </div>
+}
+else
+{
+    <div>
+        <a class="navbar" href="/Account/Login">Войти</a>
+        <a class="navbar" href="/Account/Register">Регистрация</a>
+    </div>
+}
